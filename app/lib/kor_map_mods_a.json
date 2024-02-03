@@ -1,0 +1,562 @@
+{
+	"몬스터가 원소 피해의 #%를 반사": {
+		"engName": "Monsters reflect #% of Elemental Damage",
+		"engRegex": "\"tal d\"",
+		"korName": "몬스터가 원소 피해의 #%를 반사",
+		"korRegex": "\"원.*반\"",
+		"deadly": 1000
+	},
+	"몬스터가 물리 피해의 #%를 반사": {
+		"engName": "Monsters reflect #% of Physical Damage",
+		"engRegex": "\"f ph\"",
+		"korName": "몬스터가 물리 피해의 #%를 반사",
+		"korRegex": "\"물.*반\"",
+		"deadly": 1000
+	},
+	"플레이어가 생명력, 마나 또는 에너지 보호막 재생 불가": {
+		"engName": "Players cannot Regenerate Life, Mana or Energy Shield",
+		"engRegex": "gen",
+		"korName": "플레이어가 생명력, 마나 또는 에너지 보호막 재생 불가",
+		"korRegex": "재생",
+		"deadly": 900
+	},
+	"플레이어가 비-저주 오라 스킬로 받는 효과 #% 감소": {
+		"engName": "Players have #% reduced effect of Non-Curse Auras from Skills",
+		"engRegex": "non",
+		"korName": "플레이어가 비-저주 오라 스킬로 받는 효과 #% 감소",
+		"korRegex": "오라",
+		"deadly": 900
+	},
+	"몬스터에게서 흡수할 수 없음": {
+		"engName": "Cannot Leech from Monsters",
+		"engRegex": "eec",
+		"korName": "몬스터에게서 흡수할 수 없음",
+		"korRegex": "흡수",
+		"deadly": 900
+	},
+	"플레이어의 생명력 및 에너지 보호막 회복 속도 #% 감폭": {
+		"engName": "Players have #% less Recovery Rate of Life and Energy Shield",
+		"engRegex": "\"s rec\"",
+		"korName": "플레이어의 생명력 및 에너지 보호막 회복 속도 #% 감폭",
+		"korRegex": "\"및.*감\"",
+		"deadly": 800
+	},
+	"플레이어 저항 최대치 #%": {
+		"engName": "-#% maximum Player Resistances",
+		"engRegex": "\"% ma\"",
+		"korName": "플레이어 저항 최대치 #%",
+		"korRegex": "\"항.최\"",
+		"deadly": 800
+	},
+	"몬스터의 치명타 확률 #% 증가|몬스터의 치명타 피해 배율 #%": {
+		"engName": "Monsters have #% increased Critical Strike Chance|+#% to Monster Critical Strike Multiplier",
+		"engRegex": "tip",
+		"korName": "몬스터의 치명타 확률 #% 증가|몬스터의 치명타 피해 배율 #%",
+		"korRegex": "타.확",
+		"deadly": 800
+	},
+	"몬스터가 #%의 추가 물리 피해를 카오스 속성으로 가함|몬스터가 명중 시 2초 동안 위축 유발": {
+		"engName": "Monsters deal #% extra Physical Damage as Chaos|Monsters Inflict Withered for 2 seconds on Hit",
+		"engRegex": "withe",
+		"korName": "몬스터가 #%의 추가 물리 피해를 카오스 속성으로 가함|몬스터가 명중 시 2초 동안 위축 유발",
+		"korRegex": "축",
+		"deadly": 800
+	},
+	"몬스터가 #%의 추가 물리 피해를 번개 속성으로 가함": {
+		"engName": "Monsters deal #% extra Physical Damage as Lightning",
+		"engRegex": "\"as l\"",
+		"korName": "몬스터가 #%의 추가 물리 피해를 번개 속성으로 가함",
+		"korRegex": "\"개.속\"",
+		"deadly": 700
+	},
+	"몬스터가 #%의 추가 물리 피해를 화염 속성으로 가함": {
+		"engName": "Monsters deal #% extra Physical Damage as Fire",
+		"engRegex": "\" as f\"",
+		"korName": "몬스터가 #%의 추가 물리 피해를 화염 속성으로 가함",
+		"korRegex": "\"염.속\"",
+		"deadly": 700
+	},
+	"몬스터가 #%의 추가 물리 피해를 냉기 속성으로 가함": {
+		"engName": "Monsters deal #% extra Physical Damage as Cold",
+		"engRegex": "\"as co\"",
+		"korName": "몬스터가 #%의 추가 물리 피해를 냉기 속성으로 가함",
+		"korRegex": "\"기.속\"",
+		"deadly": 700
+	},
+	"고유 보스가 주는 피해 #% 증가|고유 보스의 공격 및 시전 속도 #% 증가": {
+		"engName": "Unique Boss deals #% increased Damage|Unique Boss has #% increased Attack and Cast Speed",
+		"engRegex": "\"ls \\d+\"",
+		"korName": "고유 보스가 주는 피해 #% 증가|고유 보스의 공격 및 시전 속도 #% 증가",
+		"korRegex": "\"격.및\"",
+		"deadly": 600
+	},
+	"플레이어의 재사용 대기시간 회복 속도 #% 감폭": {
+		"engName": "Players have #% less Cooldown Recovery Rate",
+		"engRegex": "coo",
+		"korName": "플레이어의 재사용 대기시간 회복 속도 #% 감폭",
+		"korRegex": "대기",
+		"deadly": 600
+	},
+	"몬스터가 #%의 확률로 원소 상태 이상 긴급회피": {
+		"engName": "Monsters have #% chance to Avoid Elemental Ailments",
+		"engRegex": "\"d el\"",
+		"korName": "몬스터가 #%의 확률로 원소 상태 이상 긴급회피",
+		"korRegex": "\"급회\"",
+		"deadly": 600
+	},
+	"플레이어의 정확도 #% 감폭": {
+		"engName": "Players have #% less Accuracy Rating",
+		"engRegex": "\"s ac\"",
+		"korName": "플레이어의 정확도 #% 감폭",
+		"korRegex": "\"플.*정\"",
+		"deadly": 600
+	},
+	"몬스터가 최대 생명력의 #%를 추가 에너지 보호막 최대치로 획득": {
+		"engName": "Monsters gain #% of Maximum Life as Extra Maximum Energy Shield",
+		"engRegex": "\"m li\"",
+		"korName": "몬스터가 최대 생명력의 #%를 추가 에너지 보호막 최대치로 획득",
+		"korRegex": "\"치로\"",
+		"deadly": 600
+	},
+	"몬스터에게 걸리는 저주 효과 #% 감폭": {
+		"engName": "#% less effect of Curses on Monsters",
+		"engRegex": "rses",
+		"korName": "몬스터에게 걸리는 저주 효과 #% 감폭",
+		"korRegex": "리는",
+		"deadly": 800
+	},
+	"몬스터의 효과 범위 #% 증가": {
+		"engName": "Monsters have #% increased Area of Effect",
+		"engRegex": "\"e \\d+% increased ar\"",
+		"korName": "몬스터의 효과 범위 #% 증가",
+		"korRegex": "\"몬.*범\"",
+		"deadly": 500
+	},
+	"플레이어의 플라스크 충전량 #% 감소": {
+		"engName": "Players gain #% reduced Flask Charges",
+		"engRegex": "ask",
+		"korName": "플레이어의 플라스크 충전량 #% 감소",
+		"korRegex": "전량",
+		"deadly": 500
+	},
+	"몬스터가 공격 명중 시 힘줄 절단 유발": {
+		"engName": "Monsters Maim on Hit with Attacks",
+		"engRegex": "aim",
+		"korName": "몬스터가 공격 명중 시 힘줄 절단 유발",
+		"korRegex": "힘줄",
+		"deadly": 200
+	},
+	"고유 보스의 생명력 #% 증가|고유 보스의 효과 범위 #% 증가": {
+		"engName": "Unique Boss has #% increased Life|Unique Boss has #% increased Area of Effect",
+		"engRegex": "\"d li\"",
+		"korName": "고유 보스의 생명력 #% 증가|고유 보스의 효과 범위 #% 증가",
+		"korRegex": "\"고.*범\"",
+		"deadly": 600
+	},
+	"플레이어의 효과 범위 #% 감폭": {
+		"engName": "Players have #% less Area of Effect",
+		"engRegex": "\"ss are\"",
+		"korName": "플레이어의 효과 범위 #% 감폭",
+		"korRegex": "\"플.*범\"",
+		"deadly": 200
+	},
+	"몬스터가 명중 시 권능 충전 획득": {
+		"engName": "Monsters gain a Power Charge on Hit",
+		"engRegex": "\" a po\"",
+		"korName": "몬스터가 명중 시 권능 충전 획득",
+		"korRegex": "\"능.충\"",
+		"deadly": 200
+	},
+	"몬스터가 사술 방지 보유": {
+		"engName": "Monsters are Hexproof",
+		"engRegex": "\"re he\"",
+		"korName": "몬스터가 사술 방지 보유",
+		"korRegex": "\"사술\"",
+		"deadly": 400
+	},
+	"몬스터가 명중 시 권능, 격분, 인내 충전 강탈": {
+		"engName": "Monsters steal Power, Frenzy and Endurance charges on Hit",
+		"engRegex": "r,",
+		"korName": "몬스터가 명중 시 권능, 격분, 인내 충전 강탈",
+		"korRegex": "강탈",
+		"deadly": 200
+	},
+	"플레이어가 원소 약화 저주에 걸림": {
+		"engName": "Players are Cursed with Elemental Weakness",
+		"engRegex": "\"h el\"",
+		"korName": "플레이어가 원소 약화 저주에 걸림",
+		"korRegex": "\"소.약\"",
+		"deadly": 300
+	},
+	"고유 보스가 사로잡힘": {
+		"engName": "Unique Bosses are Possessed",
+		"engRegex": "poss",
+		"korName": "고유 보스가 사로잡힘",
+		"korRegex": "사로",
+		"deadly": 200
+	},
+	"몬스터의 물리 피해 감소 +#%": {
+		"engName": "+#% Monster Physical Damage Reduction",
+		"engRegex": "uct",
+		"korName": "몬스터의 물리 피해 감소 +#%",
+		"korRegex": "해.감",
+		"deadly": 200
+	},
+	"희귀 몬스터 수 #% 증가": {
+		"engName": "#% increased number of Rare Monsters",
+		"engRegex": "nu",
+		"korName": "희귀 몬스터 수 #% 증가",
+		"korRegex": "귀.몬",
+		"deadly": 100
+	},
+	"몬스터의 공격 명중 시 중독": {
+		"engName": "Monsters Poison on Hit",
+		"engRegex": "\"son o\"",
+		"korName": "몬스터의 공격 명중 시 중독",
+		"korRegex": "\"시.중\"",
+		"deadly": 700
+	},
+	"몬스터의 스킬 #회 추가 연쇄": {
+		"engName": "Monsters' skills Chain 2 additional times",
+		"engRegex": "tim",
+		"korName": "몬스터의 스킬 #회 추가 연쇄",
+		"korRegex": "연",
+		"deadly": 200
+	},
+	"플레이어가 쇠약화 저주에 걸림": {
+		"engName": "Players are Cursed with Enfeeble",
+		"engRegex": "\"h en\"",
+		"korName": "플레이어가 쇠약화 저주에 걸림",
+		"korRegex": "쇠약",
+		"deadly": 300
+	},
+	"플레이어가 노출 유발 불가": {
+		"engName": "Players cannot inflict Exposure",
+		"engRegex": "\"ot i\"",
+		"korName": "플레이어가 노출 유발 불가",
+		"korRegex": "\"노출\"",
+		"deadly": 600
+	},
+	"몬스터 기절 면역|몬스터의 생명력 #% 증폭": {
+		"engName": "Monsters cannot be Stunned|#% more Monster Life",
+		"engRegex": "tun",
+		"korName": "몬스터 기절 면역|몬스터의 생명력 #% 증폭",
+		"korRegex": "기절",
+		"deadly": 600
+	},
+	"몬스터가 명중 시 실명 유발": {
+		"engName": "Monsters Blind on Hit",
+		"engRegex": "\"s bli\"",
+		"korName": "몬스터가 명중 시 실명 유발",
+		"korRegex": "\"실명\"",
+		"deadly": 200
+	},
+	"몬스터가 명중 시 인내 충전 획득": {
+		"engName": "Monsters gain an Endurance Charge on Hit",
+		"engRegex": "\"n en\"",
+		"korName": "몬스터가 명중 시 인내 충전 획득",
+		"korRegex": "\"시.인\"",
+		"deadly": 200
+	},
+	"몬스터가 명중 시 격분 충전 획득": {
+		"engName": "Monsters gain a Frenzy Charge on Hit",
+		"engRegex": "\" a f\"",
+		"korName": "몬스터가 명중 시 격분 충전 획득",
+		"korRegex": "\"시.격\"",
+		"deadly": 200
+	},
+	"마법 몬스터 #% 증폭": {
+		"engName": "#% more Magic Monsters",
+		"engRegex": "\"e mag\"",
+		"korName": "마법 몬스터 #% 증폭",
+		"korRegex": "\"법.몬\"",
+		"deadly": -100
+	},
+	"몬스터 피해 #% 증가": {
+		"engName": "#% increased Monster Damage",
+		"engRegex": "\"d monster d\"",
+		"korName": "몬스터 피해 #% 증가",
+		"korRegex": "\"터.피\"",
+		"deadly": 400
+	},
+	"몬스터가 치명타로 받는 추가 피해 #% 감소": {
+		"engName": "Monsters take #% reduced Extra Damage from Critical Strikes",
+		"engRegex": "kes",
+		"korName": "몬스터가 치명타로 받는 추가 피해 #% 감소",
+		"korRegex": "치.*감",
+		"deadly": 600
+	},
+	"플레이어가 방지하는 억제된 주문 피해 -#%|몬스터의 정확도 #% 증가": {
+		"engName": "Players have -#% to amount of Suppressed Spell Damage Prevented|Monsters have #% increased Accuracy Rating",
+		"engRegex": "rev",
+		"korName": "플레이어가 방지하는 억제된 주문 피해 -#%|몬스터의 정확도 #% 증가",
+		"korRegex": "제된",
+		"deadly": 400
+	},
+	"몬스터의 이동 속도 #% 증가|몬스터의 공격 속도 #% 증가|몬스터의 시전 속도 #% 증가": {
+		"engName": "#% increased Monster Movement Speed|#% increased Monster Attack Speed|#% increased Monster Cast Speed",
+		"engRegex": "\"r at\"",
+		"korName": "몬스터의 이동 속도 #% 증가|몬스터의 공격 속도 #% 증가|몬스터의 시전 속도 #% 증가",
+		"korRegex": "\"동.속\"",
+		"deadly": 800
+	},
+	"지역에 고유 보스 2마리 등장": {
+		"engName": "Area contains two Unique Bosses",
+		"engRegex": "two",
+		"korName": "지역에 고유 보스 2마리 등장",
+		"korRegex": "2마",
+		"deadly": 200
+	},
+	"몬스터가 투사체 #개 추가 발사": {
+		"engName": "Monsters fire 2 additional Projectiles",
+		"engRegex": "oj",
+		"korName": "몬스터가 투사체 #개 추가 발사",
+		"korRegex": "투사",
+		"deadly": 500
+	},
+	"지역에 #%만큼 피해가 증가한 감전 지대 존재": {
+		"engName": "Area has patches of Shocked Ground which increase Damage taken by #%",
+		"engRegex": "ked",
+		"korName": "지역에 #%만큼 피해가 증가한 감전 지대 존재",
+		"korRegex": "감전",
+		"deadly": 800
+	},
+	"지역에 훼손된 지대 존재": {
+		"engName": "Area has patches of desecrated ground",
+		"engRegex": "\"es of d\"",
+		"korName": "지역에 훼손된 지대 존재",
+		"korRegex": "\"훼손\"",
+		"deadly": 400
+	},
+	"지역에 신성화 지대 존재": {
+		"engName": "Area has patches of Consecrated Ground",
+		"engRegex": "nsecrate",
+		"korName": "지역에 신성화 지대 존재",
+		"korRegex": "신성",
+		"deadly": 400
+	},
+	"지역에 용암 지대 존재": {
+		"engName": "Area has patches of Burning Ground",
+		"engRegex": "\"f bur\"",
+		"korName": "지역에 용암 지대 존재",
+		"korRegex": "\"용암\"",
+		"deadly": 300
+	},
+	"지역에 얼음 지대 존재": {
+		"engName": "Area has patches of Chilled Ground",
+		"engRegex": "hil",
+		"korName": "지역에 얼음 지대 존재",
+		"korRegex": "얼음",
+		"deadly": 300
+	},
+	"몬스터가 명중 시 #%의 확률로 원소 상태 이상 유발": {
+		"engName": "Monsters have a #% chance to cause Elemental Ailments on Hit",
+		"engRegex": "cau",
+		"korName": "몬스터가 명중 시 #%의 확률로 원소 상태 이상 유발",
+		"korRegex": "상.유",
+		"deadly": 600
+	},
+	"서로 가까이 있는 적을 처치하면 이계 몬스터를 불러옴": {
+		"engName": "Slaying Enemies close together can attract monsters from Beyond this realm",
+		"engRegex": "yi",
+		"korName": "서로 가까이 있는 적을 처치하면 이계 몬스터를 불러옴",
+		"korRegex": "이계",
+		"deadly": -200
+	},
+	"몬스터의 생명력 #% 증폭": {
+		"engName": "#% more Monster Life",
+		"engRegex": "\"r li\"",
+		"korName": "몬스터의 생명력 #% 증폭",
+		"korRegex": "\"력.4\"",
+		"deadly": 400
+	},
+	"플레이어에게 적용되는 버프가 #% 더 빠르게 만료됨": {
+		"engName": "Buffs on Players expire #% faster",
+		"engRegex": "fs",
+		"korName": "플레이어에게 적용되는 버프가 #% 더 빠르게 만료됨",
+		"korRegex": "버프",
+		"deadly": 300
+	},
+	"몬스터가 #%의 확률로 중독, 꿰뚫기, 출혈 회피": {
+		"engName": "Monsters have a #% chance to avoid Poison, Impale, and Bleeding",
+		"engRegex": "on,",
+		"korName": "몬스터가 #%의 확률로 중독, 꿰뚫기, 출혈 회피",
+		"korRegex": "뚫기",
+		"deadly": 300
+	},
+	"플레이어의 막기 확률 #% 감소|플레이어의 방어도 #% 감폭": {
+		"engName": "Players have #% reduced Chance to Block|Players have #% less Armour",
+		"engRegex": "\"o bl\"",
+		"korName": "플레이어의 막기 확률 #% 감소|플레이어의 방어도 #% 감폭",
+		"korRegex": "막기",
+		"deadly": 300
+	},
+	"모든 몬스터의 적중 피해가 항상 점화 유발": {
+		"engName": "All Monster Damage from Hits always Ignites",
+		"engRegex": "lw",
+		"korName": "모든 몬스터의 적중 피해가 항상 점화 유발",
+		"korRegex": "항상",
+		"deadly": 700
+	},
+	"몬스터의 동작 속도가 기본 수치 밑으로 내려가지 않음|몬스터 도발 면역": {
+		"engName": "Monsters' Action Speed cannot be modified to below base value|Monsters cannot be Taunted",
+		"engRegex": "elo",
+		"korName": "몬스터의 동작 속도가 기본 수치 밑으로 내려가지 않음|몬스터 도발 면역",
+		"korRegex": "본",
+		"deadly": 300
+	},
+	"몬스터의 주문 피해 억제 확률 #%": {
+		"engName": "Monsters have +#% chance to Suppress Spell Damage",
+		"engRegex": "\"o su\"",
+		"korName": "몬스터의 주문 피해 억제 확률 #%",
+		"korRegex": "\"해.억\"",
+		"deadly": 300
+	},
+	"몬스터의 카오스 저항 +#%|몬스터의 원소 저항 +#%": {
+		"engName": "+#% Monster Chaos Resistance|+#% Monster Elemental Resistances",
+		"engRegex": "\"r el\"",
+		"korName": "몬스터의 카오스 저항 +#%|몬스터의 원소 저항 +#%",
+		"korRegex": "\"스.저\"",
+		"deadly": 400
+	},
+	"플레이어가 취약성 저주에 걸림": {
+		"engName": "Players are Cursed with Vulnerability",
+		"engRegex": "\"h vu\"",
+		"korName": "플레이어가 취약성 저주에 걸림",
+		"korRegex": "\"취약\"",
+		"deadly": 300
+	},
+	"플레이어가 시간의 사슬 저주에 걸림": {
+		"engName": "Players are Cursed with Temporal Chains",
+		"engRegex": "\"h tem\"",
+		"korName": "플레이어가 시간의 사슬 저주에 걸림",
+		"korRegex": "\"사슬\"",
+		"deadly": 700
+	},
+	"몬스터가 공격 시 #%의 확률로 꿰뚫음": {
+		"engName": "Monsters have #% chance to Impale with Attacks",
+		"engRegex": "\"o im\"",
+		"korName": "몬스터가 공격 시 #%의 확률로 꿰뚫음",
+		"korRegex": "뚫음",
+		"deadly": 200
+	},
+	"몬스터의 주문 명중 시 이동 방해 유발": {
+		"engName": "Monsters Hinder on Hit with Spells",
+		"engRegex": "hind",
+		"korName": "몬스터의 주문 명중 시 이동 방해 유발",
+		"korRegex": "방해",
+		"deadly": 200
+	},
+	"지역에 등장하는 몬스터 종류 증가": {
+		"engName": "Area has increased monster variety",
+		"engRegex": "ety",
+		"korName": "지역에 등장하는 몬스터 종류 증가",
+		"korRegex": "종",
+		"deadly": 100
+	},
+	"지역에 탈주 유배자 추가 #명이 서식": {
+		"engName": "Area is inhabited by 2 additional Rogue Exiles",
+		"engRegex": "rog",
+		"korName": "지역에 탈주 유배자 추가 #명이 서식",
+		"korRegex": "유배",
+		"deadly": 100
+	},
+	"지역에 흉물 서식": {
+		"engName": "Area is inhabited by Abominations",
+		"engRegex": "bom",
+		"korName": "지역에 흉물 서식",
+		"korRegex": "흉",
+		"deadly": 100
+	},
+	"지역에 바다 마녀 및 유충 서식": {
+		"engName": "Area is inhabited by Sea Witches and their Spawn",
+		"engRegex": "ei",
+		"korName": "지역에 바다 마녀 및 유충 서식",
+		"korRegex": "녀",
+		"deadly": 100
+	},
+	"지역에 솔라리스 광신도 거주": {
+		"engName": "Area is inhabited by Solaris fanatics",
+		"engRegex": "laris",
+		"korName": "지역에 솔라리스 광신도 거주",
+		"korRegex": "솔",
+		"deadly": 100
+	},
+	"지역에 동물 서식": {
+		"engName": "Area is inhabited by Animals",
+		"engRegex": "nim",
+		"korName": "지역에 동물 서식",
+		"korRegex": "동물",
+		"deadly": 100
+	},
+	"지역에 언데드 서식": {
+		"engName": "Area is inhabited by Undead",
+		"engRegex": "\"by un\"",
+		"korName": "지역에 언데드 서식",
+		"korRegex": "언",
+		"deadly": 100
+	},
+	"지역에 혼 서식": {
+		"engName": "Area is inhabited by Ghosts",
+		"engRegex": "osts",
+		"korName": "지역에 혼 서식",
+		"korRegex": "혼",
+		"deadly": 100
+	},
+	"지역에 원거리형 몬스터 서식": {
+		"engName": "Area is inhabited by ranged monsters",
+		"engRegex": "rang",
+		"korName": "지역에 원거리형 몬스터 서식",
+		"korRegex": "리형",
+		"deadly": 100
+	},
+	"지역에 다수의 토템 존재": {
+		"engName": "Area contains many Totems",
+		"engRegex": "tot",
+		"korName": "지역에 다수의 토템 존재",
+		"korRegex": "토",
+		"deadly": 100
+	},
+	"지역에 악마 서식": {
+		"engName": "Area is inhabited by Demons",
+		"engRegex": "emons",
+		"korName": "지역에 악마 서식",
+		"korRegex": "악",
+		"deadly": 100
+	},
+	"지역에 해골 서식": {
+		"engName": "Area is inhabited by Skeletons",
+		"engRegex": "eto",
+		"korName": "지역에 해골 서식",
+		"korRegex": "해골",
+		"deadly": 100
+	},
+	"지역에 인간형 적 서식": {
+		"engName": "Area is inhabited by Humanoids",
+		"engRegex": "hum",
+		"korName": "지역에 인간형 적 서식",
+		"korRegex": "간형",
+		"deadly": 100
+	},
+	"지역에 염소인간 서식": {
+		"engName": "Area is inhabited by Goatmen",
+		"engRegex": "oa",
+		"korName": "지역에 염소인간 서식",
+		"korRegex": "소인",
+		"deadly": 100
+	},
+	"지역에 루나리스 광신도 거주": {
+		"engName": "Area is inhabited by Lunaris fanatics",
+		"engRegex": "unari",
+		"korName": "지역에 루나리스 광신도 거주",
+		"korRegex": "루",
+		"deadly": 100
+	},
+	"지역에 키타바 광신자 거주": {
+		"engName": "Area is inhabited by Cultists of Kitava",
+		"engRegex": "cul",
+		"korName": "지역에 키타바 광신자 거주",
+		"korRegex": "키타",
+		"deadly": 100
+	}
+}
