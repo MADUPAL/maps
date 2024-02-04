@@ -1,4 +1,4 @@
 export default function Page(){
 
-    return <p>maps page</p>
+    return <div>maps page</div>
 }
