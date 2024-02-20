@@ -1,10 +1,5 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
-import Header from './components/header';
-import HeaderMobile from './components/header-mobile';
-// import SideNav from './components/side-nav';
-import PageWrapper from './components/page-wrapper';
-import MarginWidthWrapper from './components/margin-width-wrapper';
 import SideNav from './ui/sidenav';
 
 export default function RootLayout({
@@ -13,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html>
       <body className={`${inter.className} antialiased bg-[#1E1F22]`}>
 
         <div className="flex flex-col md:flex-row h-screen md:overflow-hidden">
