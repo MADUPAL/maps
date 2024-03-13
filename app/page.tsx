@@ -10,7 +10,7 @@ import {
 } from "react";
 import ModeList from "./components/regex/mapModList";
 import ResultBar from "./components/regex/result-bar";
-import { makeDontWant, makeWant } from "./lib/searchUtils";
+import { makeDontWant, makeWant } from "./utils/searchUtils";
 import { mapMods } from "./lib/result";
 
 export default function Home() {
