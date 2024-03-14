@@ -1,0 +1,26 @@
+.react-flow .react-flow__handle {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.react-flow .react-flow__edge path {
+  stroke-width: 0.7;
+  stroke: black;
+}
+.react-flow__handle.connectionindicator {
+  background: none;
+  pointer-events: none;
+  cursor: inherit;
+}
+.map-white {
+  filter: contrast(1000%);
+}
+
+.map-yellow {
+  filter: contrast(1000%) sepia(100%) saturate(10000%);
+}
+
+.map-red {
+  filter: contrast(1000%) sepia(100%) saturate(10000%) hue-rotate(300deg) saturate(10000%);
+}
