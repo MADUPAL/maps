@@ -4,7 +4,7 @@ import { MapModType, mapMods } from "@/app/lib/result";
 import clsx from "clsx";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Search from "../search";
-import { makeSafeSearch } from "@/app/lib/searchUtils";
+import { makeSafeSearch } from "@/app/utils/searchUtils";
 
 export default function ModList({
   selected,
