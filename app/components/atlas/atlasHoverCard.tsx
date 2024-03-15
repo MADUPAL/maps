@@ -1,7 +1,6 @@
 "use client";
 
 import { CardType } from "@/app/lib/result";
-import clsx from "clsx";
 import { useState } from "react";
 import DivinationCard from "./divinationCard";
 
