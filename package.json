@@ -19,7 +19,8 @@
     "react-dom": "^18",
     "reactflow": "^11.10.4",
     "tailwind-merge": "^2.2.1",
-    "use-debounce": "^10.0.0"
+    "use-debounce": "^10.0.0",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",
