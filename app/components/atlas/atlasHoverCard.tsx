@@ -4,13 +4,7 @@ import { CardType } from "@/app/lib/result";
 import { useState } from "react";
 import DivinationCard from "./divinationCard";
 
-export default function AtlasHoverCard({
-  card,
-  children,
-}: {
-  card: CardType;
-  children: React.ReactNode;
-}) {
+export default function AtlasHoverCard({ card }: { card: CardType }) {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   return (
     <>
@@ -23,7 +17,26 @@ export default function AtlasHoverCard({
           setIsVisible(false);
         }}
       >
-        {children}
+        {card.boss !== undefined && card.boss && (
+          <img
+            src="/img/boss.webp"
+            width={16}
+            height={16}
+            alt=""
+            loading="lazy"
+            className="inline-block me-1"
+          />
+        )}
+        <img
+          src="/img/icon/cardIcon.png"
+          width={16}
+          height={16}
+          alt=""
+          loading="lazy"
+          className="inline-block me-1"
+        />
+
+        {card.name}
         {isVisible && <DivinationCard card={card} />}
       </div>
     </>
