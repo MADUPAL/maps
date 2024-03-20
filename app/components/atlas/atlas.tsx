@@ -30,25 +30,27 @@ import {
   mapsOnAtlas,
 } from "@/app/lib/result";
 import { OFFSET, BGID, BGSCALE, NODESCALE } from "@/app/lib/constants";
-import MapInfoModal from "./mapInfoModal";
 import Modal from "./modal";
+import AtlasBackgroundNode from "./atlasBackgroundNode";
+import AtlasMapNode from "./atlasMapNode";
+import AtlasSearchNode from "./atlasSearchNode";
 
-type BackgroundNodeDataType = {
-  image: string;
-  width: number;
-  height: number;
-};
-type MapNodeDataType = {
-  voidstones: number;
-  map: {
-    atlas: boolean;
-    name: string;
-    levels: number[];
-    icon: string;
-    type: string;
-  };
-  selectable: true;
-};
+// type BackgroundNodeDataType = {
+//   image: string;
+//   width: number;
+//   height: number;
+// };
+// type MapNodeDataType = {
+//   voidstones: number;
+//   map: {
+//     atlas: boolean;
+//     name: string;
+//     levels: number[];
+//     icon: string;
+//     type: string;
+//   };
+//   selectable: true;
+// };
 export type ModalStatusType = {
   isOpen: boolean;
   map: extendedMapType | undefined;
@@ -70,6 +72,9 @@ function makeMapNode(map: extendedMapType, voidstones: number) {
         levels: map.levels,
         icon: map.icon,
         type: map.type,
+        pantheon: map.pantheon
+          ? { isExist: true, name: map.pantheon }
+          : { isExist: false, name: "" },
       },
     },
     selectable: true,
@@ -86,48 +91,48 @@ function makeMapEdge(map: extendedMapType) {
     };
   });
 }
-function BackgroundNode({ data }: NodeProps<BackgroundNodeDataType>) {
-  return (
-    <div
-      style={{
-        width: data.width,
-        height: data.height,
-        // backgroundImage: `url('${data.image}')`,
-        // backgroundRepeat: "round",
-      }}
-    >
-      <img src={data.image} loading="lazy" />
-    </div>
-  );
-}
+// function BackgroundNode({ data }: NodeProps<BackgroundNodeDataType>) {
+//   return (
+//     <div
+//       style={{
+//         width: data.width,
+//         height: data.height,
+//         // backgroundImage: `url('${data.image}')`,
+//         // backgroundRepeat: "round",
+//       }}
+//     >
+//       <img src={data.image} loading="lazy" />
+//     </div>
+//   );
+// }
 
-function MapNode({ data }: NodeProps<MapNodeDataType>) {
-  const map = data.map;
+// function MapNode({ data }: NodeProps<MapNodeDataType>) {
+//   const map = data.map;
 
-  const textColor = mapTierColor(map.levels, true, map.type, data.voidstones);
+//   const textColor = mapTierColor(map.levels, true, map.type, data.voidstones);
 
-  return (
-    <>
-      <Handle type="source" position={Position.Top} />
-      <Handle type="target" position={Position.Top} />
+//   return (
+//     <>
+//       <Handle type="source" position={Position.Top} />
+//       <Handle type="target" position={Position.Top} />
 
-      <div className="cursor-pointer">
-        {!!map.atlas && (
-          <MapImage
-            icon={map.icon}
-            level={mapLevelsWithVoidstone(map.levels, true, data.voidstones)}
-            type={map.type}
-          />
-        )}
-        <div
-          className={`px-1 absolute left-1/2 -translate-x-1/2 top-[105%] text-[13px] font-bold bg-[#212529] rounded-md whitespace-nowrap ${textColor}`}
-        >
-          {map.name}
-        </div>
-      </div>
-    </>
-  );
-}
+//       <div className="cursor-pointer">
+//         {!!map.atlas && (
+//           <MapImage
+//             icon={map.icon}
+//             level={mapLevelsWithVoidstone(map.levels, true, data.voidstones)}
+//             type={map.type}
+//           />
+//         )}
+//         <div
+//           className={`px-1 absolute left-1/2 -translate-x-1/2 top-[105%] text-[13px] font-bold bg-[#212529] rounded-md whitespace-nowrap ${textColor}`}
+//         >
+//           {map.name}
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
 const bgNode = [
   {
     id: BGID,
@@ -150,23 +155,48 @@ const bgNode = [
     zIndex: -1,
   },
 ];
-// const nodes: Node[] = [...bgNode];
-const nodes: Node[] = [...bgNode, ...mapsOnAtlas.map((m) => makeMapNode(m, 0))];
+const searchBar = [
+  {
+    id: "searchbar",
+    type: "search",
+    position: {
+      x: 0,
+      y: -720,
+    },
+    data: {},
+  },
+];
+const nodes: Node[] = [
+  ...bgNode,
+  ...mapsOnAtlas.map((m) => makeMapNode(m, 0)),
+  ...searchBar,
+];
 const edges = deduplicateEdge(
   mapsOnAtlas.flatMap((m) => makeMapEdge(m)),
   "id"
 );
 
-// console.log(nodes);
-// console.log(edges);
-
-const nodeTypes: NodeTypes = { background: BackgroundNode, map: MapNode };
+const nodeTypes: NodeTypes = {
+  background: AtlasBackgroundNode,
+  map: AtlasMapNode,
+  search: AtlasSearchNode,
+};
 
 const Atlas = () => {
   const [modalStatus, setModalStatus] = useState<ModalStatusType>({
     isOpen: false,
     map: undefined,
   });
+  const onNodeClick = useCallback(
+    (event: React.MouseEvent<Element, MouseEvent>, node: Node) => {
+      if (node.id !== "bg" && node.id !== "searchbar")
+        setModalStatus({
+          isOpen: !modalStatus.isOpen,
+          map: mapsOnAtlas.find((m) => m.name === node.id),
+        });
+    },
+    [modalStatus]
+  );
 
   return (
     <>
@@ -189,15 +219,19 @@ const Atlas = () => {
           proOptions={{
             hideAttribution: true,
           }}
-          onNodeClick={(event, node) => {
-            // console.log(node);
-            if (node.id !== "bg")
-              setModalStatus({
-                isOpen: !modalStatus.isOpen,
-                map: mapsOnAtlas.find((m) => m.name === node.id),
-              });
-            // console.log(modalStatus.map);
-          }}
+          onNodeClick={
+            onNodeClick
+            //   (event, node) => {
+            //   // console.log(node);
+            //   if (node.id !== "bg")
+            //     setModalStatus({
+            //       isOpen: !modalStatus.isOpen,
+            //       map: mapsOnAtlas.find((m) => m.name === node.id),
+            //     });
+
+            //   // console.log(modalStatus.map);
+            // }
+          }
           fitView
         />
       </div>
