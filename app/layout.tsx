@@ -9,7 +9,8 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className={`${inter.className} antialiased bg-[#1E1F22]`}>
+      {/* <body className={`${inter.className} antialiased bg-[#1E1F22]`}> */}
+      <body className="bg-[#1E1F22]">
         <div className="flex flex-col md:flex-row h-screen md:overflow-hidden">
           <div className="w-full flex-none md:w-60">
             <SideNav />
